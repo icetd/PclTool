@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/Res">
+        <file>Res/Mario.ico</file>
+        <file>Res/Exit.png</file>
+        <file>Res/OpenFile.png</file>
+        <file>Res/SaveFile.png</file>
+        <file>Res/BackGround.png</file>
+        <file>Res/PointColor.png</file>
+        <file>Res/CloudRender.png</file>
+        <file>Res/PointSize.png</file>
+        <file>Res/BackUp.png</file>
+        <file>Res/btn_Back.png</file>
+        <file>Res/btn_Down.png</file>
+        <file>Res/btn_Forward.png</file>
+        <file>Res/btn_Left.png</file>
+        <file>Res/btn_Right.png</file>
+        <file>Res/btn_Up.png</file>
+    </qresource>
+</RCC>

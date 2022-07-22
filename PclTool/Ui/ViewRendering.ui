@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ViewRendering</class>
+ <widget class="QDialog" name="ViewRendering">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>182</width>
+    <height>165</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/Res/Res/CloudRender.png</normaloff>:/Res/Res/CloudRender.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QRadioButton" name="btn_x">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>X轴渲染</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="btn_y">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Y轴渲染</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="btn_z">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Z轴渲染</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="btn_i">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>11</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>点云强度渲染</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <spacer>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>131</width>
+         <height>31</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_Ok">
+       <property name="text">
+        <string>确定</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_Cancel">
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_Ok</sender>
+   <signal>clicked()</signal>
+   <receiver>ViewRendering</receiver>
+   <slot>btn_Ok_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>687</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>96</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_Cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>ViewRendering</receiver>
+   <slot>btn_Cancel_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>768</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_x</sender>
+   <signal>clicked()</signal>
+   <receiver>ViewRendering</receiver>
+   <slot>btn_x_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>300</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_y</sender>
+   <signal>clicked()</signal>
+   <receiver>ViewRendering</receiver>
+   <slot>btn_y_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>331</x>
+     <y>81</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>301</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_z</sender>
+   <signal>clicked()</signal>
+   <receiver>ViewRendering</receiver>
+   <slot>btn_z_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>331</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>301</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_i</sender>
+   <signal>clicked()</signal>
+   <receiver>ViewRendering</receiver>
+   <slot>btn_i_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>169</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>321</x>
+     <y>266</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>btn_Cancel_clicked()</slot>
+  <slot>btn_Ok_clicked()</slot>
+  <slot>btn_x_clicked()</slot>
+  <slot>btn_y_clicked()</slot>
+  <slot>btn_z_clicked()</slot>
+  <slot>btn_i_clicked()</slot>
+ </slots>
+</ui>
